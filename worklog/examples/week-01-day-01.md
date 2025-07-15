@@ -213,7 +213,7 @@
 ## 📎 Attachments & Links
 
 ### Code & Projects
-- [GitHub Repository Setup](https://github.com/username/fcj-internship)
+- [GitHub Repository Setup](https://github.com/MnhWuanz/Internship)
 - [AWS CLI Configuration](https://gist.github.com/username/aws-cli-setup)
 
 ### Learning Resources
