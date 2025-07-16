@@ -1,0 +1,131 @@
+
+
+# Worklog - Ngày 16/07/2025
+
+## 📅 Thông tin cơ bản
+
+- **Ngày**: 16/07/2025
+- **Thứ**: Thứ 4
+- **Tuần thực tập**: Tuần thứ 1/8
+- **Thời gian làm việc**: 9:00 - 17:00
+- **Mood**: 😐 + 1 Ngày bình thường
+
+## 🎯 Mục tiêu ngày hôm nay
+
+- [] Mục tiêu 1: Thực hiện bài lab Module03-Lab13
+- [] Tạo được Backup Plan cho hệ thống để tự động hóa việc sao lưu.
+- [] Kiểm thử hoạt động sao lưu/phục hồi.
+- [] Kiểm thử thông báo khi các tiến trình hoàn tất.
+
+## 💼 Công việc đã thực hiện
+
+### 1. Preparation ⏱️ 9:00-10:00
+
+- **Mô tả**:
+  - Create S3 bucket
+  - Triển khai cơ sở hạ tầng
+  - Sử dụng Template và  Lambda Function có sẵn
+- **Kết quả**:
+  - Tạo S3 để lưu trữ  source
+  - Tạo stack Cloudformation để tự động tạo ra các dịch vụ như EC2 instance (Máy chủ ảo EC2), SNS Topic (Chủ đề SNS), và Lambda Function (Hàm Lambda).
+- **Tools/Tech**:
+  - Youtube, Github, AWS Console, CloudFormation, S3
+- **Links**:
+  - [Template CloudFormation và  Lambda Function](https://github.com/AWS-First-Cloud-Journey/Backup-Plan/archive/refs/heads/master.zip)
+  - [AWS CloudFormation](https://aws.amazon.com/vi/cloudformation/)
+  - [AWS S3](https://console.aws.amazon.com/s3/home?c=s3&p=pm&z=1#)
+  - [EC2 Console](https://ap-southeast-1.console.aws.amazon.com/ec2/home?region=ap-southeast-1#Overview:)
+  - [GitHub Organization](https://github.com/AWS-First-Cloud-Journey)
+
+### 2. Backup Plan ⏱️ 10:30-11:00
+
+- **Mô tả**:
+  - Tạo Backup Plan
+- **Kết quả**:
+  - Nắm được yếu tố chủ yếu ảnh hưởng đến chiến lược sao lưu bao gồm Mục tiêu thời gian khôi phục (RTO) và Mục tiêu điểm khôi phục (RPO)
+  - Cách tạo Backup Plan để thiết lập và tự động hóa chính sách sao lưu
+
+- **Tools/Tech**:
+  - Youtube, Github, AWS Console, AWS Backup
+- **Links**:
+  - [AWS Backup](https://ap-southeast-1.console.aws.amazon.com/backup/home?region=ap-southeast-1#/home)
+  - [GitHub Organization](https://github.com/AWS-First-Cloud-Journey)
+
+### 3. Set up notifications ⏱️ 12:00-14:00
+
+- **Mô tả**:
+  - Cấu hình AWS CLI
+  - Kiểm tra giao diện SNS
+  - Xác minh thông báo
+- **Kết quả**:
+  - Biết cách sử dụng dịch vụ AWS SNS (Simple Notification Service) để gửi thông báo liên quan đến các hoạt động sao lưu đang diễn ra
+- **Tools/Tech**:
+  - Youtube, Github, AWS Console, Amazon SNS, Temirnal, AWS Backup
+- **Links**:
+  - [AWS SNS](https://aws.amazon.com/vi/sns/)
+
+
+### 4. Test Restore ⏱️ 14:00-15:00
+
+- **Mô tả**:
+  - Kiểm tra phục hồi
+- **Kết quả**:
+  - AWS Lambda được sử dụng để tự động kiểm tra tất cả sao lưu đã tạo, đảm bảo rằng quá trình khôi phục thành công và tài nguyên tạo trong quá trình kiểm tra sau đó được xóa để tiết kiệm chi phí.
+  - Hiểu biết về trạng thái của sao lưu và khôi phục
+  - Hiểu được quá trình kiểm tra khôi phục, điều quan trọng là phải xác định các tiêu chí cần thiết để khôi phục dữ liệu thành công từ tài nguyên đã được sao lưu
+  - Tạo một bản sao lưu theo yêu cầu để kiểm tra xem liệu sao lưu có thành công hay không.
+  - Xác nhận các thông tin về Backups và Restore được gửi về mail
+  - Sử dụng Amazon CloudWatch để xem các log
+  - Triển khai thành công AWS BACKUP CHO HỆ THỐNG.
+- **Tools/Tech**:
+  - Youtube, Github, AWS Console, AWS Lambda, Amazon CloudWatch
+- **Links**:
+  - [Amazon CloudWatch](https://aws.amazon.com/vi/cloudwatch/)
+
+## 📚 Kiến thức học được
+
+### 🔧 Technical Skills
+
+- **AWS Services**:
+  - Amazon Backup
+  - Amazon Simple Notification Service (SNS)
+  - Amazon CloudWatch
+
+### 💡 Concepts & Theory
+
+
+## 📋 Kế hoạch ngày mai
+
+### Priority Tasks
+
+- [ ] **High**: Thực hiện bài thực thành tuần 03
+
+## 📎 Attachments & Links
+
+### Code & Projects
+
+- [GitHub Repository Setup](https://github.com/MnhWuanz/Internship)
+
+### Learning Resources
+
+- [Articles read](link)
+- [Videos watched](link)
+- [Courses completed](link)
+
+### Screenshots & Demos
+
+- [AWS Console screenshots]
+- [Application demos]
+- [Architecture diagrams]
+
+---
+
+**📝 Notes for tomorrow:**
+[Ghi chú quan trọng cho ngày mai]
+
+**🎯 Week Progress:**
+[Tiến độ so với mục tiêu tuần]
+
+---
+
+_Worklog created by: Nguyễn Mạnh Quân -FCJ Intern Batch 2024_
